@@ -39,9 +39,7 @@ namespace SimpleFactory
             foreach (var item in types)
             {
                 if (item.GetInterface(typeof(IHero).ToString()) != null)
-                {
                     heroes.Add(item.Name.ToLower(), item);
-                }
             }
 
             return heroes;
